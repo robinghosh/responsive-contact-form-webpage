@@ -1,4 +1,5 @@
-document.getElementById('messageForm').addEventListener("submit", function(e){    
+const form = document.getElementById('messageForm');
+form.addEventListener("submit", function(e){    
     e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -6,9 +7,6 @@ document.getElementById('messageForm').addEventListener("submit", function(e){
     const message = document.getElementById('message').value.trim();
     const response = document.getElementById('response');
     
-    const msgSection = document.getElementById('msg-section');
-    const msgList = document.getElementById('msg-list');
-
     if(!name || !email || !message){
         response.textContent = "All fields are required!";
         response.style.color = "red";
@@ -35,11 +33,14 @@ document.getElementById('messageForm').addEventListener("submit", function(e){
 
 
     localStorage.setItem("data", JSON.stringify(dataArray));
-
+    
     response.innerHTML = `Message sent successfully. Name: <b>${name}</b>  Email: <b>${email}</b>  Message: <b>${message}</b>`;
     response.style.color = "green";
-    response.style.fontSize = '1rem';      
+    response.style.fontSize = '1rem';          
     
+    form.reset();
+    showData();
+
 
 });
 
@@ -48,17 +49,30 @@ document.getElementById('messageForm').addEventListener("submit", function(e){
 function showData(){
     const msgSection = document.getElementById('msg-section');
     const msgList = document.getElementById('msg-list');
+    msgList.innerHTML = ""
 
     let storedMsg = localStorage.getItem('data');
+    let storedMsgData = JSON.parse(storedMsg);
+    
 
-    if (storedMsg){
-        let storedMsgData = JSON.parse(storedMsg);
-        console.log(storedMsgData);        
+    if (storedMsgData && storedMsgData.length > 0){        
+        
+        storedMsgData.forEach((element, index) => {    
+            const Li = document.createElement('li');        
+            Li.innerHTML =               
+            `
+                <h5>${index + 1}</h5>
+                <h6><b>Name: </b>${element.name}</h6>
+                <h6><b>Email:</b> ${element.email}</h6>
+                <p><b>Message:</b> ${element.message}</p>
+            `;
+            msgList.appendChild(Li);   
+            Li.classList = "msg shadow-sm p-2";         
+        });          
+       msgSection.style.display = "flex";
     }else{
         msgSection.style.display = 'none';
-    }   
-
-    
-};+
+    }       
+};
 
 showData();

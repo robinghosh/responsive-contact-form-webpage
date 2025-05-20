@@ -10,7 +10,6 @@
     color: rgb(15, 15, 15) !important;
     background-color: white !important;
     
-    font-weight: dark !important;
 }
 .nav-link:hover{
     scale: 105%;
@@ -128,6 +127,8 @@
   list-style: none;
 }
 
-.msg{
+.msg{  
+  width: 70%;
+  max-width: 80%;
   
 }
