@@ -6,6 +6,9 @@ document.getElementById('messageForm').addEventListener("submit", function(e){
     const message = document.getElementById('message').value.trim();
     const response = document.getElementById('response');
     
+    const msgSection = document.getElementById('msg-section');
+    const msgList = document.getElementById('msg-list');
+
     if(!name || !email || !message){
         response.textContent = "All fields are required!";
         response.style.color = "red";
@@ -35,8 +38,27 @@ document.getElementById('messageForm').addEventListener("submit", function(e){
 
     response.innerHTML = `Message sent successfully. Name: <b>${name}</b>  Email: <b>${email}</b>  Message: <b>${message}</b>`;
     response.style.color = "green";
-    response.style.fontSize = '1rem';
-        
+    response.style.fontSize = '1rem';      
     
 
 });
+
+
+
+function showData(){
+    const msgSection = document.getElementById('msg-section');
+    const msgList = document.getElementById('msg-list');
+
+    let storedMsg = localStorage.getItem('data');
+
+    if (storedMsg){
+        let storedMsgData = JSON.parse(storedMsg);
+        console.log(storedMsgData);        
+    }else{
+        msgSection.style.display = 'none';
+    }   
+
+    
+};+
+
+showData();
