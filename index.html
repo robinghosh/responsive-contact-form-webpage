@@ -1,135 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Webpage - Robin Ghosh</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-</head>
-<body>
+    <!-- Bootstarp 5 and Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- Header Section -->
     <header>
-        <section class="nav-section">
-            <nav class="navbar navbar-expand-lg bg-tran">
-                <div class="container-fluid">
-                    <!-- <a href="#" class="navbar-brand">My Website</a> -->
-                    <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="#myNavbar" aria-expanded="false" aria-label="Toggle Navbar">
-                        <span class="navbar-toggler-icon "></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="myNavbar" >
-                        <ul class="navbar-nav d-flex flex-lg-row flex-column align-items-center gap-3">
-                            <li class="nav-item">
-                                <a href="" class="nav-link  rounded">
-                                    HOME
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link rounded">
-                                    CONTACT US
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link rounded">
-                                    ABOUT US
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#faq" class="nav-link rounded">
-                                    FAQ
-                                </a>
-                            </li>
-                        </ul>                        
-                    </div>
-                </div>
-            </nav>            
-        </section>
+      <!-- Navbar Responsive -->
+      <section class="nav-section">
+        <nav class="navbar navbar-expand-lg bg-tran">
+          <div class="container-fluid">
+            <!-- <a href="#" class="navbar-brand">My Website</a> -->
+            <button
+              class="navbar-toggler text-bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNavbar"
+              aria-controls="#myNavbar"
+              aria-expanded="false"
+              aria-label="Toggle Navbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-lg-flex justify-content-center"
+              id="myNavbar">
+              <ul
+                class="navbar-nav d-flex flex-lg-row flex-column align-items-center gap-3">
+                <li class="nav-item">
+                  <a href="" class="nav-link rounded"> HOME </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link rounded"> CONTACT US </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link rounded"> ABOUT US </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#faq" class="nav-link rounded"> FAQ </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://github.com/robinghosh/responsive-contact-form-webpage"
+                    class="nav-link rounded">
+                    Github REPO
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://robinghosh.github.io/responsive-contact-form-webpage/"
+                    class="nav-link rounded">
+                    Github Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
 
+    <!-- Cover Image with text section -->
     <section class="cover-section">
-        <div class="cover-text-container">
-            <p class="text-center cover-text">
-                Welcome TO Responsive Webpage. <br> Developed by <b><a class="" href="https://github.com/robinghosh">ROBIN GHOSH.</a></b>
-            </p>
-        </div>        
+      <div class="cover-text-container">
+        <p class="text-center cover-text">
+          Welcome TO Responsive Webpage. <br />
+          Developed by
+          <b
+            ><a class="" href="https://github.com/robinghosh"
+              >ROBIN GHOSH.</a
+            ></b
+          >
+        </p>
+      </div>
     </section>
 
-   <section class="main border-bottom">
-        <div class="card-section">
-            <h2 class="section-title">Contents</h2>
-            <ul class="card-list">
-            <li class="cards">
-                <img class="card-image" src="images/card-one.jpg" alt="Card 1">
-                <div class="card-content">
-                    <h4 class="card-title">Card 1</h4>
-                    <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, nisl vitae vestibulum venenatis, lorem massa malesuada libero, eget iaculis erat nisi at ex. </p>
-                </div>
-            </li>
-            <li class="cards">
-                <img class="card-image" src="images/card-two.jpg" alt="Card 2">
-                <div class="card-content">
-                <h4 class="card-title">Card 2</h4>
-                <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, nisl vitae vestibulum venenatis, lorem massa malesuada libero, eget iaculis erat nisi at ex. </p>
-                </div>
-            </li>
-            <li class="cards">
-                <img class="card-image" src="images/card-three.jpg" alt="Card 3">
-                <div class="card-content">
-                <h4 class="card-title">Card 3</h4>
-                <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, nisl vitae vestibulum venenatis, lorem massa malesuada libero, eget iaculis erat nisi at ex. </p>
-                </div>
-            </li>
-            <li class="cards">
-                <img class="card-image" src="images/card-four.jpg" alt="Card 4">
-                <div class="card-content">
-                <h4 class="card-title">Card 4</h4>
-                <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, nisl vitae vestibulum venenatis, lorem massa malesuada libero, eget iaculis erat nisi at ex. </p>
-                </div>
-            </li>
-            </ul>
-        </div>
+    <!-- Cards Section -->
+    <section class="main border-bottom">
+      <div class="card-section">
+        <h2 class="section-title">Contents</h2>
+        <ul class="card-list">
+          <li class="cards">
+            <img class="card-image" src="images/card-one.jpg" alt="Card 1" />
+            <div class="card-content">
+              <h4 class="card-title">Card 1</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                tempus, nisl vitae vestibulum venenatis, lorem massa malesuada
+                libero, eget iaculis erat nisi at ex.
+              </p>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="card-image" src="images/card-two.jpg" alt="Card 2" />
+            <div class="card-content">
+              <h4 class="card-title">Card 2</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                tempus, nisl vitae vestibulum venenatis, lorem massa malesuada
+                libero, eget iaculis erat nisi at ex.
+              </p>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="card-image" src="images/card-three.jpg" alt="Card 3" />
+            <div class="card-content">
+              <h4 class="card-title">Card 3</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                tempus, nisl vitae vestibulum venenatis, lorem massa malesuada
+                libero, eget iaculis erat nisi at ex.
+              </p>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="card-image" src="images/card-four.jpg" alt="Card 4" />
+            <div class="card-content">
+              <h4 class="card-title">Card 4</h4>
+              <p class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                tempus, nisl vitae vestibulum venenatis, lorem massa malesuada
+                libero, eget iaculis erat nisi at ex.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="form-section  d-flex flex-column justify-content-center align-items-center mb-5">
-        <h2 class="section-title mt-4">Send a message</h2>
-        <div class="form border p-5 shadow ">
-            <form class="gap-3 d-flex flex-column align-items-center" id="messageForm">
-                <div class="d-lg-flex w-100 gap-1 align-items-center">
-                    <label class="form-label text-bg-light" for="name">Name</label>
-                    <input class="form-control" type="text" id="name"/>
-                </div>
+    <!-- Contact Form Section -->
+    <section
+      class="form-section d-flex flex-column justify-content-center align-items-center mb-5">
+      <h2 class="section-title mt-4">Send a message</h2>
+      <div class="form border p-5 shadow">
+        <form
+          class="gap-3 d-flex flex-column align-items-center"
+          id="messageForm">
+          <div class="d-lg-flex w-100 gap-1 align-items-center">
+            <label class="form-label text-bg-light" for="name">Name</label>
+            <input class="form-control" type="text" id="name" />
+          </div>
 
-                <div class="d-lg-flex w-100 gap-1 align-items-center">
-                    <label class="form-label text-bg-light" for="email">Email</label>
-                    <input class="form-control" type="text" id="email"/>
-                </div>
+          <div class="d-lg-flex w-100 gap-1 align-items-center">
+            <label class="form-label text-bg-light" for="email">Email</label>
+            <input class="form-control" type="text" id="email" />
+          </div>
 
-                <div class="d-lg-flex w-100 gap-1 align-items-center">
-                    <label class="form-label text-bg-light" for="message">Message</label>
-                    <textarea class="form-control" type="text" maxlength="200" id="message"></textarea>                    
-                </div>
-                <button class="btn btn-dark w-50" type="submit">Send</button>
-                <div id="response"></div>
-            </form>
-            
+          <div class="d-lg-flex w-100 gap-1 align-items-center">
+            <label class="form-label text-bg-light" for="message"
+              >Message</label
+            >
+            <textarea
+              class="form-control"
+              type="text"
+              maxlength="200"
+              id="message"></textarea>
+          </div>
+          <button class="btn btn-dark w-50" type="submit">Send</button>
+          <div id="response"></div>
+        </form>
+      </div>
 
-        </div>
-        
-        <div class="msg-display bg-light" id="msg-section">
-            <h2 class="section-title mt-5">Your Previous Messages</h2>
-            <ul class="msg-list list-unstyled text-break text-start" id="msg-list">
-                      
-            </ul>
-        </div>
+      <!-- Shows Saved Contact Informations -->
+      <div class="msg-display bg-light" id="msg-section">
+        <h2 class="section-title mt-5">Your Previous Messages</h2>
+        <ul
+          class="msg-list list-unstyled text-break text-start"
+          id="msg-list"></ul>
+      </div>
     </section>
 
-
+    <!-- Footer Section -->
     <footer>
-        <div class="text-center text-bg-dark p-2 w-100 fw-bold fs-5">
-            @2025 All Right Reserved. <br> Developed by <b><a class="" href="https://github.com/robinghosh">ROBIN GHOSH.</a></b>
-        </div>
+      <div class="text-center text-bg-dark p-2 w-100 fw-bold fs-5">
+        @2025 All Right Reserved. <br />
+        Developed by
+        <b><a class="" href="https://github.com/robinghosh">ROBIN GHOSH.</a></b>
+      </div>
     </footer>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
